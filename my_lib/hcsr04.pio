@@ -1,0 +1,16 @@
+.program if_echo
+; to mesure the time of an impulse respond
+
+.wrap_target
+    wait 1 pin 0 ; wait for pin 0 (echo) to go 1(high)
+    mov  x, ~null 
+
+count:
+    jmp  pin dec ; if pin not 0 (high) jmp to dec
+    jmp  done ; if pin low jmp finish
+dec:
+    jmp  x-- count ; decrement x, if not 0 jmp to count
+done:
+    mov  isr, x ; pio can only push isr  
+    push block ; block so we pause if FIFO full so don't lose value
+.wrap
