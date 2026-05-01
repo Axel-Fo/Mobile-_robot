@@ -25,7 +25,7 @@ Built with the Raspberry Pi Pico SDK. Flash the compiled binary to the Pico via 
 
 ## Behaviors
 
-### Line following (FSM)
+### Line following (FSM) (assignment 3)
 
 | State | Behavior |
 |---|---|
@@ -33,7 +33,7 @@ Built with the Raspberry Pi Pico SDK. Flash the compiled binary to the Pico via 
 | `STATE_BLACK_LEFT` | Turn right |
 | `STATE_BLACK_RIGHT` | Turn left |
 
-### Obstacle avoidance (FSM)
+### Obstacle avoidance (FSM) (assignment 4)
 
 | State | Behavior |
 |---|---|
