@@ -45,12 +45,3 @@ Built with the Raspberry Pi Pico SDK. Flash the compiled binary to the Pico via 
 
 Obstacle detected at < 10 cm (front sensor). Object lost if side sensor reads > 30 cm.
 
-### Odometry
-
-Distance is estimated from wheel encoder pulses:
-
-```
-D = N × (π × Dw) / P
-```
-
-where `N` = pulse count, `Dw` = wheel diameter, `P` = pulses per revolution (measured: 60).
